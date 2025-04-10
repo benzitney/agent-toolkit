@@ -118,4 +118,8 @@ async def run_conversation():
     await call_agent_async("Tell me the weather in New York")
 
 # Execute the conversation using await in an async context (like Colab/Jupyter)
-await run_conversation()
+# Execute the conversation using await in an async context (like Colab/Jupyter)
+async def main():
+    await run_conversation()
+
+asyncio.run(main())
